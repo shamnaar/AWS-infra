@@ -10,6 +10,6 @@ output "subnet_public" {
 output "subnet_private" {
   value = data.aws_subnets.private
 }
-output "concat_test" {
-    value = concat(data.aws_subnets.public.ids, data.aws_subnets.private.ids)
-}
+# output "concat_test" {
+#     value = concat(data.aws_subnets.public.ids, data.aws_subnets.private.ids)
+# }
